@@ -1,0 +1,163 @@
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100px;
+  background: #000044;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigate {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 36px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.leftColumn {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+div.picture {
+  height: 400px;
+  background-image: url("images/first-website-header.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+div.picture h1 {
+  line-height: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 40px;
+  font-size: 60px;
+  left: 80px;
+  font-family: 'Abril Fatface', cursive;
+  color: #000044;
+}
+
+div.picture h3 {
+  line-height: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 160px;
+  font-size: 30px;
+  left: 80px;
+  font-family: 'Abril Fatface', cursive;
+  color: #000044;
+}
+
+div#first {
+  position:absolute;
+  top: 500px;
+}
+
+div#second {
+  position:absolute;
+  top: 1100px;
+}
+
+div#third {
+  position:absolute;
+  top: 1700px;
+}
+
+div.quote {
+  padding: 0px 20px 20px 10px;
+  background: #000044;
+  display: flex;
+  align-items: center;
+}
+
+blockquote {
+  font-family: 'Abril Fatface', cursive;
+  color: white;
+  font-size: 54px;
+  margin: 0;
+}
+
+blockquote::before {
+  content: '“';
+  font-size: 96px;
+}
+
+div.rightColumn {
+  margin: 20px 30px 20px 10px;
+  max-width: 450px;
+  flex-grow: 1.5;
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000044;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+div.rightColumn h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+div.prologue {
+  font-size: 18px;
+}
+div.firstSection {
+  position:absolute;
+  top: 500px;
+}
+
+div.secondSection {
+  position:absolute;
+  top: 1100px;
+}
+
+div.thirdSection {
+  position:absolute;
+  top: 1700px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+div#back {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-family: 'Jomhuria', cursive;
+  font-size: 30px;
+}
+
+a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lime;
+}
