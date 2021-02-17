@@ -34,7 +34,7 @@ $('#addTodoItem').click(() => {
         // $('.listElement, .okBtn, .delBtn').css('display', 'block');
         $('.listContainer').css('display', 'flex');
         $('.listContainer').css('justify-content', 'space-between');
-        $('.listContainer').css('width', '500px');
+        $('.listContainer').css('width', '100%');
         $(`#todo${szamlalo}`).css('margin-left', '30px');
         $(`#todo${szamlalo}`).css('font-size', 'small');
 

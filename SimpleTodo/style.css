@@ -15,6 +15,7 @@ ul#listTitle {
     font-size: large;
     font-weight: bold;
     text-align: left;
+    width: 100%;
 }
 
 #mainList {
@@ -24,5 +25,15 @@ ul#listTitle {
 
 #nextTodoItem {
     font-size: small;
+    height: 24px;
 }
 
+#addTodoItem {
+    background-color: darkviolet;
+    color: white;
+    height: 100%;
+}
+
+#addButton {
+    height: 30px;
+}
