@@ -7,7 +7,14 @@ main.container {
     text-align: center;
     padding: 10px 20px;
     max-width: 520px;
+    height: 600px;
+    overflow: auto;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    color: #666;
 }
 
 ul#listTitle {
@@ -16,24 +23,61 @@ ul#listTitle {
     font-weight: bold;
     text-align: left;
     width: 100%;
+    list-style-type: none;
 }
 
 #mainList {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 #nextTodoItem {
     font-size: small;
     height: 24px;
+    padding-right: 0;
+    border: 0;
+}
+
+#nextTodoItem:focus {
+    outline: none;
 }
 
 #addTodoItem {
     background-color: darkviolet;
     color: white;
     height: 100%;
+    padding-left: 2px;
+    border: 0;
+    box-shadow: 0 0 2px 2px grey ;
 }
 
 #addButton {
+    max-width: 360px;
     height: 30px;
+    border: slategrey solid 1px;
+    box-shadow: 0 0 2px 2px grey ;
 }
+
+.okBtn, .delBtn {
+    /* background-image : url(./images/deleteIcon.svg); */
+    background-size: 100% 100%;
+    /* display: inline-block; */
+    height: 20px;
+    width: 20px;
+    color: white;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .okBtn {
+      margin-right: 10px;
+      background-image: url(./images/confirmIcon.svg);
+  }
+
+  .delBtn {
+      background-image: url(./images/deleteIcon.svg);
+  }

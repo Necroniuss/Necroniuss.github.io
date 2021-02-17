@@ -22,21 +22,20 @@ $('#addTodoItem').click(() => {
                 /* konténer a gombokhoz */
                 $(`#listContainer${szamlalo}`).append(`<div class='btnContainer' id='btnContainer${szamlalo}'></div>`);
                 /* első gomb a listaelemhez */
-                $(`#btnContainer${szamlalo}`).append(`<button class="okBtn" id='okBtn${szamlalo}'>Ok</button>`);
+                $(`#btnContainer${szamlalo}`).append(`<button class="okBtn" id='okBtn${szamlalo}'></button>`);
                 /* második gomb a listaelemhez */
-                $(`#btnContainer${szamlalo}`).append(`<button class="delBtn" id='delBtn${szamlalo}'>Del</button>`);
+                $(`#btnContainer${szamlalo}`).append(`<button class="delBtn" id='delBtn${szamlalo}'></button>`);
 
             /* törli a text beviteli mező tartalmát és fókuszba helyezi azt, hogy beírhassuk a következő elemet */
             document.getElementById('nextTodoItem').value = null;
             $('#nextTodoItem').focus();
 
         /* css rész az új listaelemhez */
-        // $('.listElement, .okBtn, .delBtn').css('display', 'block');
         $('.listContainer').css('display', 'flex');
         $('.listContainer').css('justify-content', 'space-between');
         $('.listContainer').css('width', '100%');
         $(`#todo${szamlalo}`).css('margin-left', '30px');
-        $(`#todo${szamlalo}`).css('font-size', 'small');
+        $(`#todo${szamlalo}`).css('font-size', 'smaller');
 
         /*
         Ez volt az eredeti, ami áthúzta a listaelemet amire kattintottunk.
@@ -52,6 +51,8 @@ $('#addTodoItem').click(() => {
 /* todo listaelemhez tartozó event kezelő */
 $('#mainList').on('click', '.okBtn', (event) => {
     $(event.target).parent().parent().css('text-decoration', 'line-through');
+    $(event.target).parent().parent().css('color', '#3333');
+    $(event.target).css('background-image', 'url(./images/confirmIconDone.svg)');
     $('#nextTodoItem').focus();
 });
 
