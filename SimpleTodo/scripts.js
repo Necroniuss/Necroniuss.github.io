@@ -34,8 +34,12 @@ $('#addTodoItem').click(() => {
         $('.listContainer').css('display', 'flex');
         $('.listContainer').css('justify-content', 'space-between');
         $('.listContainer').css('width', '100%');
-        $(`#todo${szamlalo}`).css('margin-left', '30px');
+        $('.btnContainer').css('display', 'flex');
+        $('.btnContainer').css('flex-wrap', 'no-wrap');
+        $(`#todo${szamlalo}`).css('margin-left', '20px');
+        $(`#todo${szamlalo}`).css('margin-right', '20px');
         $(`#todo${szamlalo}`).css('font-size', 'smaller');
+        $(`#todo${szamlalo}`).css('overflow', 'hidden');
 
         /*
         Ez volt az eredeti, ami áthúzta a listaelemet amire kattintottunk.

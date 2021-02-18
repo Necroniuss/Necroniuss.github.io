@@ -17,52 +17,53 @@ main.container {
     color: #666;
 }
 
-ul#listTitle {
-    padding: 0;
-    font-size: large;
-    font-weight: bold;
-    text-align: left;
-    width: 100%;
-    list-style-type: none;
-}
+    div#addButton {
+        max-width: 360px;
+        height: 30px;
+        border: slategrey solid 1px;
+        box-shadow: 0 0 2px 2px grey ;
+    }
 
-#mainList {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
+        input#nextTodoItem {
+            overflow:auto;
+            font-size: small;
+            height: 24px;
+            padding-right: 0;
+            border: 0;
+        }
+        
+        input#nextTodoItem:focus {
+            outline: none;
+        }
 
-#nextTodoItem {
-    font-size: small;
-    height: 24px;
-    padding-right: 0;
-    border: 0;
-}
+        button#addTodoItem {
+            background-color: darkviolet;
+            color: white;
+            height: 100%;
+            padding-left: 2px;
+            border: 0;
+            box-shadow: 0 0 2px 2px grey ;
+        }
 
-#nextTodoItem:focus {
-    outline: none;
-}
+    div#mainList {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 
-#addTodoItem {
-    background-color: darkviolet;
-    color: white;
-    height: 100%;
-    padding-left: 2px;
-    border: 0;
-    box-shadow: 0 0 2px 2px grey ;
-}
+        ul#listTitle {
+            padding: 0;
+            /* font-size: large;
+            font-weight: bold;
+            text-align: left; */
+            width: 100%;
+            list-style-type: none;
+        }
 
-#addButton {
-    max-width: 360px;
-    height: 30px;
-    border: slategrey solid 1px;
-    box-shadow: 0 0 2px 2px grey ;
-}
+/* A lenti css a js-ben létrehozott elemekre vonatkozik!*/
 
-.okBtn, .delBtn {
-    /* background-image : url(./images/deleteIcon.svg); */
+button.okBtn, button.delBtn {
     background-size: 100% 100%;
-    /* display: inline-block; */
     height: 20px;
     width: 20px;
     color: white;
@@ -73,11 +74,11 @@ ul#listTitle {
     cursor: pointer;
   }
 
-  .okBtn {
+  button.okBtn {
       margin-right: 10px;
       background-image: url(./images/confirmIcon.svg);
   }
 
-  .delBtn {
+  button.delBtn {
       background-image: url(./images/deleteIcon.svg);
   }
