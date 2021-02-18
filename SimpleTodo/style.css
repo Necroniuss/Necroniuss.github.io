@@ -18,6 +18,7 @@ main.container {
 }
 
     div#addButton {
+        display: flex;
         max-width: 360px;
         height: 30px;
         border: slategrey solid 1px;
