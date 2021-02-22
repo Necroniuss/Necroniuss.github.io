@@ -80,7 +80,9 @@ $('#leftButton').click(() => {
 
 $('.thumb').click((event) => {
     let indexClicked = $(event.target).attr('data-index');
-    let numberIndex = parseInt(indexClicked);
-    loadImage(numberIndex);
-    currentPhoto = numberIndex;
+    let numberIndex = parseInt(indexClicked);  
+    if (currentPhoto != numberIndex) {
+        loadImage(numberIndex);
+        currentPhoto = numberIndex;
+    };
 });
