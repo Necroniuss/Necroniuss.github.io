@@ -12,15 +12,18 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: stretch;
 }
 
     div#picture {
         width: 100%;
+        height: 80%;
         flex-basis: 80%;
         box-shadow: 0 0 4px 4px rgb(80, 80, 80);
         flex-grow: 4;
         display: flex;
         justify-content: space-between;
+        align-items: stretch;
         overflow: hidden;
     }
 
@@ -73,12 +76,19 @@ main {
                 color: white;
             }
 
+            p#imgDesc {
+                margin-bottom: 0;
+                margin-left: 5px;
+                margin-top: 5px;
+            }
+
             div#desc h2#imgTitle {
                 margin: 5px;
             }
 
     div#thumbs {
         width: 100%;
+        height: 20%;
         flex-basis: 20%;
         flex-grow: 1;
         background-color: transparent;
