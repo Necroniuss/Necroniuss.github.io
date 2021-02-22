@@ -19,7 +19,7 @@ main.container {
 
     div#addButton {
         display: flex;
-        max-width: 360px;
+        max-width: 70%;
         height: 30px;
         border: slategrey solid 1px;
         box-shadow: 0 0 2px 2px grey ;

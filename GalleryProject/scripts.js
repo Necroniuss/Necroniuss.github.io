@@ -54,7 +54,7 @@ function loadImage(imgNumber) {
     $('#image').attr('src', imagesData[imgNumber].photo);
     $('#imgTitle').text(imagesData[imgNumber].title);
     $('#imgDesc').text(imagesData[imgNumber].description);
-    $(`.thumb[data-index=${imgNumber}]`).toggleClass(`thumbActive data-index=${imgNumber}`);
+    $(`.thumb[data-index=${imgNumber}]`).toggleClass(`thumbActive`);
     $(`.thumbActive[data-index != ${imgNumber}]`).toggleClass('thumbActive');
 };
 
